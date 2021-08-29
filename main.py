@@ -45,7 +45,7 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer',
 #Model
 print('Model creation')
 
-#### Invoke pretrained ResNet18 model #######
+#### net = Invoke pretrained ResNet18 model #######
 
 net = net.to(device)
 
@@ -59,7 +59,7 @@ def train(epoch):
         # Write your code here
 
     
-    #Write training losses to losstrain.txt for each epoch
+    
 
 
  
@@ -73,8 +73,6 @@ def test(epoch):
             
 
     # Save checkpoint for the model which yields best accuracy
-    # Write test set losses to losstest.txt for each epoch
-    #Write test set accuracies to acctest.txt for each epoch
     
 
 for epoch in range(0,200):
