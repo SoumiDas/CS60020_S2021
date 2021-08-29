@@ -46,7 +46,7 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer',
 #Model
 print('Model creation')
 
-net = model.convfc()
+#### Invoke pretrained ResNet18 model #######
 
 net = net.to(device)
 
@@ -78,7 +78,7 @@ def test(epoch):
     #Write test set accuracies to acctest.txt for each epoch
     
 
-for epoch in range(0,500):
+for epoch in range(0,200):
     print("Training")
     train(epoch)
     print("Testing")
