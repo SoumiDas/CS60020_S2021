@@ -10,7 +10,6 @@ import torchvision.transforms as transforms
 import os
 import argparse
 
-import model
 
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
